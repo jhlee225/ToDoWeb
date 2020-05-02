@@ -1,16 +1,41 @@
+@import "reset.css";
 body {
   background-color: #ecf0f1;
 }
-.btn {
-  cursor: pointer;
+* {
+  cursor: default;
+  user-select: none;
 }
 
 h1 {
+  font-size: 120px;
   color: #34495e;
   transition: color 0.5s ease-in-out;
 }
-.clicked {
-  color: #7f8c8d;
+
+input {
+  padding: 5px;
+  border: white solid 5px;
+  border-radius: 20px;
+}
+
+input:active,
+input:focus {
+  outline: none;
+}
+h4 {
+  font-size: 32px;
+  background-color: rgb(255, 255, 255, 0.4);
+  padding: 5px 50px;
+  margin: 10px 0px;
+  border-radius: 100px;
+}
+.contents_wrapper {
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .form,
@@ -38,4 +63,37 @@ h1 {
   height: 100%;
   z-index: -1;
   animation: fadein 0.5s linear;
+}
+.js-weather {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: flex;
+  background-color: rgb(255, 255, 255, 0.4);
+  padding: 5px 15px;
+  margin: 10px 0px;
+  border-radius: 20px;
+}
+.js-toDoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  background-color: rgb(180, 180, 180, 0.6);
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 20px;
+}
+
+.js-toDoList li span {
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-toDoList li button {
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
