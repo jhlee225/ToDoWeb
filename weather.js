@@ -3,7 +3,7 @@ const API_KEY = "18869f4f01a37ac87f4c23f6fc1c6a21";
 const weather = document.querySelector(".js-weather");
 function getWeather(lat, lng) {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=18869f4f01a37ac87f4c23f6fc1c6a21`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=18869f4f01a37ac87f4c23f6fc1c6a21`
   )
     .then(function (response) {
       return response.json();
